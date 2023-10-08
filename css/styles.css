@@ -10953,6 +10953,30 @@ section.resume-section {
   padding-bottom: 5rem;
   max-width: 75rem;
 }
+
+/* video css */
+video {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  min-width: 10%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+/* Create a class for the overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0 0 0 / 95%); /* Adjust the last value (0.5) to control opacity */
+  z-index: -1; /* Place the overlay above the video */
+}
+
+/* video css */
+
 section.resume-section .resume-section-content {
   width: 100%;
 }

@@ -31,4 +31,33 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    /* Typing Effect */
+    const textElement = document.querySelector(".typing-text");
+    const phrases = ["Vivian George Tharakan.", "I'm a Full Stack Developer."];
+    let phraseIndex = 0;
+
+    function type() {
+        textElement.textContent = phrases[phraseIndex];
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+    }
+
+    setInterval(type, 5000);
+    /* Typing Effect */
+
+    /**
+   * Hero type effect
+   */
+   const typed = select('.typed')
+   if (typed) {
+    let typed_strings = typed.getAttribute('typed')
+    typed_strings = typed_strings.split(',')
+    new Typed('.typed', {
+      strings: typed_strings,
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 2000
+    });
+   }
+
 });

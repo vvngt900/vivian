@@ -10991,9 +10991,11 @@ section.resume-section .resume-section-content {
 }
 
 .typewrite {
+  width: 100%; /* Set a fixed width for the typewriter container */
   overflow: hidden; /* Hide overflowing text */
-  border-right: .1em solid blue; /* Typing cursor style */
+  border-right: .1em solid rebeccapurple; /* Typing cursor style */
   white-space: nowrap; /* Prevent text from wrapping */
+  margin: 0; /* Center the text */
   animation: typewriter 10s steps(40) infinite, cursor-blink .5s step-end infinite; /* Apply the typing and blinking cursor animations */
 }
 
@@ -11011,7 +11013,7 @@ section.resume-section .resume-section-content {
       border-color: transparent;
   }
   50% {
-      border-color: blue;
+      border-color: rebeccapurple;
   }
 }
 
@@ -11021,6 +11023,8 @@ section.resume-section .resume-section-content {
     min-width: 80%;
   }
 }
+
+
 @media (min-width: 992px) {
   section.resume-section {
     padding-left: 3rem;
